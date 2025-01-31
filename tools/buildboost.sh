@@ -83,7 +83,7 @@ elif [ \( "$BUILD" = "--mingw-w64" \) ]; then
     rm -rf "$boost_src_home/tools/build/src/user-config.jam"
     cat > "$boost_src_home/tools/build/src/user-config.jam" << EOF
 using gcc : :
-x86_64-w64-mingw32-g++-posix
+x86_64-w64-mingw32-clang++
 :
 <compileflags>-std=c++17
 <compileflags>"${CXXFLAGS}"

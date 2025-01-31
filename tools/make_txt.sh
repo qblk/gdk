@@ -22,8 +22,8 @@ elif [ \( "$3" = "iphone" \) -o \( "$3" = "iphonesim" \) ]; then
     ARCHS=$(comma_separate $ARCHS)
     HOST_SYSTEM="darwin"
 elif [ \( "$3" = "windows" \) ]; then
-    C_COMPILER="x86_64-w64-mingw32-gcc-posix"
-    CXX_COMPILER="x86_64-w64-mingw32-g++-posix"
+    C_COMPILER="x86_64-w64-mingw32-clang"
+    CXX_COMPILER="x86_64-w64-mingw32-clang++"
     STRIP="x86_64-w64-mingw32-strip"
     OBJCOPY="x86_64-w64-mingw32-objcopy"
     ARCHS="[]"

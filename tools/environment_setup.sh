@@ -133,8 +133,8 @@ case $BUILD in
     "--mingw-w64")
         export target_triple="${HOST_ARCH}-w64-mingw32"
         export AR=${HOST_ARCH}-w64-mingw32-ar
-        export CC=${HOST_ARCH}-w64-mingw32-gcc-posix
-        export CXX=${HOST_ARCH}-w64-mingw32-g++-posix
+        export CC=${HOST_ARCH}-w64-mingw32-clang
+        export CXX=${HOST_ARCH}-w64-mingw32-clang++
         export RANLIB=${HOST_ARCH}-w64-mingw32-ranlib
         export RC=${HOST_ARCH}-w64-mingw32-windres
         CMAKE_TOOLCHAIN_FILE=${GDK_SOURCE_ROOT}/cmake/profiles/windows-mingw-w64.cmake
