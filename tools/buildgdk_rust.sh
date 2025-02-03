@@ -67,6 +67,7 @@ export OPENSSL_INCLUDE_DIR=$OPENSSL_INCLUDE_DIR
 export OPENSSL_LIB_DIR=$( dirname ${OPENSSL_CRYPTO_LIB} )
 export OPENSSL_STATIC=1
 # echo "cargo args: ${CARGO_ARGS[*]}"
+(cd subprojects/gdk_rust && cargo update)
 cargo build "${CARGO_ARGS[@]}"
 ARTIFACT_FULL_PATH=$(find ${ARTIFACT_PATH_HINT} -name ${ARTIFACT})
 
