@@ -21,8 +21,7 @@ static std::vector<std::string> default_wamp_cert_roots = {
 // issuer: '/C=US/O=Internet Security Research Group/CN=ISRG Root X2'
 // not before: Fri Sep  4 00:00:00 2020
 // not after: Mon Sep 15 16:00:00 2025
-R"(
------BEGIN CERTIFICATE-----
+R"(-----BEGIN CERTIFICATE-----
 MIICxjCCAk2gAwIBAgIRALO93/inhFu86QOgQTWzSkUwCgYIKoZIzj0EAwMwTzEL
 MAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNo
 IEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDIwHhcNMjAwOTA0MDAwMDAwWhcN
@@ -46,8 +45,7 @@ YJkgsTgDyj2gJrjubi1K9sZmHzOa25JK1fUpE8ZwYii6I4zPPS/Lgul/
 // issuer: '/C=US/O=Internet Security Research Group/CN=ISRG Root X2'
 // not before: Fri Sep  4 00:00:00 2020
 // not after: Mon Sep 15 16:00:00 2025
-R"(
------BEGIN CERTIFICATE-----
+R"(-----BEGIN CERTIFICATE-----
 MIICxjCCAkygAwIBAgIQTtI99q9+x/mwxHJv+VEqdzAKBggqhkjOPQQDAzBPMQsw
 CQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2gg
 R3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMjAeFw0yMDA5MDQwMDAwMDBaFw0y
@@ -69,8 +67,7 @@ UAM1u34E36neL/Zba7ombkIOchSgx1iVxzqtFWGddgoG+tppRPWhuhhn
 // issuer: '/C=US/O=Google Trust Services LLC/CN=GTS Root R1'
 // not before: Wed Jun 22 00:00:00 2016
 // not after: Sun Jun 22 00:00:00 2036
-R"(
------BEGIN CERTIFICATE-----
+R"(-----BEGIN CERTIFICATE-----
 MIIFWjCCA0KgAwIBAgIQbkepxUtHDA3sM9CJuRz04TANBgkqhkiG9w0BAQwFADBH
 MQswCQYDVQQGEwJVUzEiMCAGA1UEChMZR29vZ2xlIFRydXN0IFNlcnZpY2VzIExM
 QzEUMBIGA1UEAxMLR1RTIFJvb3QgUjEwHhcNMTYwNjIyMDAwMDAwWhcNMzYwNjIy
@@ -106,8 +103,7 @@ E3PYJ/HQcu51OyLemGhmW/HGY0dVHLqlCFF1pkgl
 // issuer: '/C=US/O=Internet Security Research Group/CN=ISRG Root X1'
 // not before: Thu Jun  4 11:04:38 2015
 // not after: Mon Jun  4 11:04:38 2035
-R"(
------BEGIN CERTIFICATE-----
+R"(-----BEGIN CERTIFICATE-----
 MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw
 TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh
 cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4

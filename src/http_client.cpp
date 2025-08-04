@@ -145,6 +145,7 @@ namespace green {
         ctx->set_verify_mode(asio::ssl::context::verify_peer | asio::ssl::context::verify_fail_if_no_peer_cert);
         // attempt to load system roots
         ctx->set_default_verify_paths();
+        std::cerr << "tls_init\n";
         for (const auto& root : roots) {
             if (root.empty()) {
                 // TODO: at the moment looks like the roots/pins are empty strings when absent
@@ -162,7 +163,17 @@ namespace green {
 
             // add network provided root
             const asio::const_buffer root_const_buff(root.c_str(), root.size());
-            ctx->add_certificate_authority(root_const_buff);
+            try {
+                std::cerr << "add_certificate_authority " << root << "\n";
+                ctx->add_certificate_authority(root_const_buff);
+            } catch (const boost::system::system_error& e) {
+                std::cerr << "[Boost::System Error]\n";
+                std::cerr << "  Message   : " << e.what() << "\n";
+                std::cerr << "  Error Code: " << e.code().value() << "\n";
+                std::cerr << "  Category  : " << e.code().category().name() << "\n";
+                std::cerr << "  Meaning   : " << e.code().message() << "\n";
+                // throw;
+            }
         }
 
         ctx->set_verify_callback(
