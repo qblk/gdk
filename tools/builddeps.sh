@@ -239,10 +239,10 @@ export OPENSSL_SRCDIR=`pwd`/tmp/${source_name}
 
 # building boost
 name="boost"
-source_url="https://archives.boost.io/release/1.87.0/source/boost_1_87_0.tar.gz"
-source_name="boost_1_87_0"
-source_filename="boost_1_87_0.tar.gz"
-source_hash="f55c340aa49763b1925ccf02b2e83f35fdcf634c9d5164a2acb87540173c741d"
+source_url="https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.gz"
+source_name="boost_1_88_0"
+source_filename="boost_1_88_0.tar.gz"
+source_hash="3621533e820dcab1e8012afd583c0c73cf0f77694952b81352bf38c1488f9cb4"
 prepare_sources ${source_url} ${source_filename} ${source_hash}
 export BOOST_SRCDIR=`pwd`/tmp/${source_name}
 export PRJ_SUBDIR=${BOOST_SRCDIR}

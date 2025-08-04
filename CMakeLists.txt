@@ -42,11 +42,11 @@ if (POLICY CMP0167)
     # Search for the BoostConfig.cmake file to configure boost
     cmake_policy(SET CMP0167 NEW)
     set(Boost_DIR ${CMAKE_PREFIX_PATH} CACHE INTERNAL "")
-    list(APPEND CMAKE_MODULE_PATH ${CMAKE_PREFIX_PATH}/lib/cmake/Boost-1.87.0)
+    list(APPEND CMAKE_MODULE_PATH ${CMAKE_PREFIX_PATH}/lib/cmake/Boost-1.88.0)
     # Set Boost_LIBRARY_DIRS which appears to no longer be defined
     set(Boost_LIBRARY_DIRS ${CMAKE_PREFIX_PATH}/lib CACHE INTERNAL "")
 endif()
-find_package(Boost 1.87.0 EXACT REQUIRED COMPONENTS date_time thread log chrono system)
+find_package(Boost 1.88.0 EXACT REQUIRED COMPONENTS date_time thread log chrono system)
 # zlib
 set(ZLIB_ROOT ${CMAKE_PREFIX_PATH})
 find_package(ZLIB 1.3 EXACT REQUIRED)
